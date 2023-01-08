@@ -36,6 +36,10 @@ class Product(models.Model):
     imageUrl = models.URLField()
     status =models.BooleanField(default= True)
     data_created =models.DateField(auto_now_add=True)
+    description = models.CharField()
+    qte = models.CharField()
+    
+
 
     class Meta:
       ordering = ['-date_created']
